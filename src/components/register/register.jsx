@@ -9,6 +9,8 @@ const Register = (props) => {
   const [postalCode, setPostalCode] = useState("");
   const [locationn, setLocation] = useState("");
 
+  
+
   function handleChange(event) {
     setPostalCode(event.target.value);
     console.log(event.target.value);
@@ -42,7 +44,7 @@ const Register = (props) => {
     register(user)
       .then(() => {
         setTimeout(() => {
-          //window.location.reload()
+          window.location.reload()
         }, 1000);
       })
       .catch((error) => {
@@ -61,14 +63,7 @@ const Register = (props) => {
                 <img src="https://www.tutorialrepublic.com/examples/images/avatar.png" alt="Avatar" />
               </div>
               <h4 className="modal-title">Registro de usuario</h4>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-hidden="true"
-              >
-                &times;
-              </button>
+              
             </div>
                   <div className="modal-body">
             <div className="form-group">

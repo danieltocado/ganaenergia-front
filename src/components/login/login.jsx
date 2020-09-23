@@ -39,14 +39,7 @@ const Login = (props) => {
                 <img src="https://www.tutorialrepublic.com/examples/images/avatar.png" alt="Avatar" />
               </div>
               <h4 className="modal-title">Iniciar sesión</h4>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-hidden="true"
-              >
-                &times;
-              </button>
+             
             </div>
             <div className="modal-body">
               <form onSubmit={onSubmit}>
